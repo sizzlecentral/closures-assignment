@@ -31,16 +31,48 @@
 // console.log(purchasedMuffins);
 
 
-var chore = 'laundry';
+// var chore = 'laundry';
+//
+// function doChores() {
+//   var chore = 'sneak out';
+//
+//   function reportActivity() {
+//     console.log(chore);
+//   }
+//
+//   reportActivity();
+// }
+//
+// doChores(); // calling doChores(), which then calls reportActivity()
 
-function doChores() {
-  var chore = 'sneak out';
 
-  function reportActivity() {
-    console.log(chore);
-  }
+// var letter;
+// var contents = 'Looking for gold';
+//
+// function getMail() {
+//
+//   function changeContents() {
+//     var contents = 'Struck it rich!';
+//   }
+//
+//   changeContents();
+//   return contents;
+// }
+//
+// letter = getMail();
+// console.log(letter);
 
-  reportActivity();
+
+var decision;
+
+function firstIdea() {
+  var decision = 'Buy a new car';
+  return decision;
 }
 
-doChores(); // calling doChores(), which then calls reportActivity()
+function secondIdea() {
+  console.log(decision);
+}
+
+firstIdea();
+secondIdea();

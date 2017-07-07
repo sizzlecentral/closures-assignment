@@ -55,3 +55,39 @@ doChores(); // calling doChores(), which then calls reportActivity()
   variable defined in the first line.
 
 6.  
+var letter;
+var contents = 'Looking for gold';
+function getMail() {
+  function changeContents() {
+    var contents = 'Struck it rich!';
+  }
+  changeContents();
+  return contents;
+}
+letter = getMail();
+console.log(letter);
+
+  => Outputs 'looking for gold', as the return value of
+  changeContents is a new variable local to that function,
+  and the variable contents set in line 2 remains unchanged.
+
+7.  
+var decision;
+function firstIdea() {
+  var decision = 'Buy a new car';
+  return decision;
+}
+function secondIdea() {
+  console.log(decision);
+}
+firstIdea();
+secondIdea();
+
+  => Outputs 'undefined', as firstIdea has a return value
+  of the local variable decision but prints nothing to the
+  screen.  secondIdea doesn't have access to the local
+  variable in firstIdea, so it logs the undefined variable
+  decision to the screen, from line 1.
+
+
+// Blocks
