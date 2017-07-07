@@ -90,4 +90,38 @@ secondIdea();
   decision to the screen, from line 1.
 
 
-// Blocks
+// ----- Exercise 2 ----- //
+
+1.
+function buildHouse(address) {
+  // ... house gets built
+  return 'Building house at ' + address;
+}
+buildHouse('123 Happy St.');
+console.log(address);
+
+  => Errors as address can't be accessed outside of the
+  function.  Defining 'address = buildHouse('123 Happy St.')'
+  outside of the function prints the correct string.
+
+2.  
+var determined = false;
+if (determined) {
+  var smoothie = 'strawberry banana';
+}
+console.log(smoothie);
+
+  => smoothie is undefined outside of the if statement.  
+  Moving var smoothie outside of the statement makes it
+  print whether determined is true or false.
+
+3.  
+for (var index = 0; index < 5; index++) {
+  // ...
+}
+console.log(index);
+
+  => Moving the for loop inside a function makes index
+  inaccessible to console.log.
+
+4.  

@@ -63,16 +63,42 @@
 // console.log(letter);
 
 
-var decision;
+// var decision;
+//
+// function firstIdea() {
+//   var decision = 'Buy a new car';
+//   return decision;
+// }
+//
+// function secondIdea() {
+//   console.log(decision);
+// }
+//
+// firstIdea();
+// secondIdea();
 
-function firstIdea() {
-  var decision = 'Buy a new car';
-  return decision;
+
+// ----- Exercise 2 ----- //
+
+// function buildHouse(address) {
+//   // ... house gets built
+//   return 'Building house at ' + address;
+// }
+// address = buildHouse('123 Happy St.');
+// console.log(address);
+
+
+// var determined = true;
+// var smoothie = 'strawberry banana';
+// if (determined) {
+// }
+// console.log(smoothie);
+
+
+function scopeExample () {
+  for (var index = 0; index < 5; index++) {
+    // ...
+  }
 }
 
-function secondIdea() {
-  console.log(decision);
-}
-
-firstIdea();
-secondIdea();
+console.log(index);
