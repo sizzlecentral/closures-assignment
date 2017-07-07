@@ -3,10 +3,44 @@
 // lastWord = 'goodbye';
 
 
-var message = "Up here!";
+// var message = "Up here!";
+//
+// function shout() {
+//   console.log(message);
+// }
+//
+// shout();
 
-function shout() {
-  console.log(message);
+
+// var message = "Up here!";
+//
+// function shout(message) {
+//   console.log(message);
+// }
+//
+// shout("Down below!")
+
+
+// var muffins = 'two dozen';
+// var purchasedMuffins;
+//
+// function getMuffins() {
+//   return muffins;
+// }
+// purchasedMuffins = getMuffins();
+// console.log(purchasedMuffins);
+
+
+var chore = 'laundry';
+
+function doChores() {
+  var chore = 'sneak out';
+
+  function reportActivity() {
+    console.log(chore);
+  }
+
+  reportActivity();
 }
 
-shout();
+doChores(); // calling doChores(), which then calls reportActivity()
