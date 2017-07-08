@@ -95,10 +95,17 @@
 // console.log(smoothie);
 
 
-function scopeExample () {
-  for (var index = 0; index < 5; index++) {
-    // ...
-  }
-}
+// function scopeExample () {
+//   for (var index = 0; index < 5; index++) {
+//     // ...
+//   }
+// }
+//
+// console.log(index);
 
-console.log(index);
+
+// var items = ['glasses', 'toothpaste', 'wallet'];
+// for (i = 0; i < items.length; i++) {
+//   var lastItem = items[i];
+// }
+// console.log(lastItem);

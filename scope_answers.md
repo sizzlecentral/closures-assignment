@@ -67,9 +67,9 @@ function getMail() {
 letter = getMail();
 console.log(letter);
 
-  => Outputs 'looking for gold', as the return value of
-  changeContents is a new variable local to that function,
-  and the variable contents set in line 2 remains unchanged.
+  => Outputs 'looking for gold', as changeContents has no
+  return value and var contents is local to that function.  
+  The variable contents set in line 2 remains unchanged.
 
 7.  
 var decision;
@@ -125,3 +125,11 @@ console.log(index);
   inaccessible to console.log.
 
 4.  
+var items = ['glasses', 'toothpaste', 'wallet'];
+items.forEach(function(item) {
+  var lastItem = item;
+});
+console.log(lastItem);
+
+  => Changing forEach loop to a for loop allows you to
+  output the last item from items.
